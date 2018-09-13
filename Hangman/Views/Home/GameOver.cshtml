@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <div class="image">
+    <img src="~/img/@Hangman.Models.Guess.GetImg()">
+  </div>
+  <h1>GAME OVER!</h1>
+  <h3>Master Word: @Hangman.Models.Guess._guessword</h3>
+  <h2>@Hangman.Models.Guess.blanks</h2>
+  <form action="/" method="get">
+    <button type="submit" class="btn btn-danger">Play Again</button>
+  </form>
+</div>

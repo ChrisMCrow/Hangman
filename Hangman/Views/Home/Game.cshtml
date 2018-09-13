@@ -3,13 +3,16 @@
 }
 
 <div class="container">
+  <div class="image">
+    <img src="~/img/@Hangman.Models.Guess.GetImg()">
+  </div>
+  <h3>Missed Guesses: @Hangman.Models.Guess.missCount</h3>
+  <h3>You guessed the letter: @Model.guessLetter</h3>
 
-  @Model._images;
-
+  <h2>@Hangman.Models.Guess.blanks</h2>
   <form class="" action="/game/new" method="post">
     <label for="new-letter">Enter in a letter:</label>
     <input type="text" maxlength="1" name="new-letter" id="new-letter">
     <button type="submit" class="btn btn-success">Guess</button>
   </form>
-
 </div>
