@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+
+  @Model._images;
+
+  <form class="" action="/game/new" method="post">
+    <label for="new-letter">Enter in a letter:</label>
+    <input type="text" maxlength="1" name="new-letter" id="new-letter">
+    <button type="submit" class="btn btn-success">Guess</button>
+  </form>
+
+</div>
